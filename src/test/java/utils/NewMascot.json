@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "category": {
+    "id": 0,
+    "name": "Mascot"
+  },
+  "name": "Catbug",
+  "photoUrls": [
+    "Nothing"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}

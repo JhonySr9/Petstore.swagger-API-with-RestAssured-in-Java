@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.*;
@@ -14,6 +16,7 @@ public class BaseAPITest {
 
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri("https://petstore.swagger.io/")
+                .addHeader("Content-Type", "application/json")
                 .build();
         responseSpecification = new ResponseSpecBuilder()
                 .expectContentType(ContentType.JSON)
